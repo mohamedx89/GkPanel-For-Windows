@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<updateserver>
+	<modulename>System Files Editor</modulename>
+	<latestversion>103</latestversion>
+	<downloadurl>http://zpxm.mach-hosting.com/repo/system_files.zpp</downloadurl>
+	<desc>Easily edit selected GKPanel system files</desc>
+	<updatedesc>Fixed missing variable in module.xml. Updated to work with GKPanel Repository.</updatedesc>
+	<authorname>HuyGK</authorname>
+	<authoremail>buznbox@gmail.com</authoremail>
+	<authorurl>http://zppy.info.tm/</authorurl>
+	<ostype>Win</ostype>
+</updateserver>

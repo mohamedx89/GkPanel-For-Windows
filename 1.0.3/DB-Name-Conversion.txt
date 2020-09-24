@@ -1,0 +1,63 @@
+***NOTICE***: THIS IS NOT COMPLETE AND HAS NOT BEEN FULLY TESTED!
+
+This is an advanced conversion documantation to rename the XPanel database (XPanel_core) to GKPanel (gkpanel_core) on Windows platforms.
+
+***NOTICE***: Make sure you have already successfully completed the XPanel to GKPanel Upgrade.txt included in this package FIRST!)
+
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Use at your OWN RISK! - Has NOT BEEN TESTED!
+
+1) Using phpMyAdmin or your favorite database tool, login as ROOT user and make a backup of the XPanel_core database.
+
+2) Create a new database: SQL query: CREATE DATABASE gkpanel_core;
+
+3) Move/Rename all database tables to the new database:
+
+***NOTICE***: If you have any custom modules that use the XPanel_core database, you will need to reinstall them or rename them using the example query below:
+			  Ex: RENAME TABLE XPanel_core.table-name TO gkpanel_core.table_name;
+SQL Query:
+
+RENAME TABLE
+	XPanel_core.x_accounts TO gkpanel_core.x_accounts,
+	XPanel_core.x_aliases TO gkpanel_core.x_aliases,
+	XPanel_core.x_bandwidth TO gkpanel_core.x_bandwidth,
+	XPanel_core.x_cronjobs TO gkpanel_core.x_cronjobs,
+	XPanel_core.x_distlists TO gkpanel_core.x_distlists,
+	XPanel_core.x_distlistusers TO gkpanel_core.x_distlistusers,
+	XPanel_core.x_dns TO gkpanel_core.x_dns,
+	XPanel_core.x_dns_create TO gkpanel_core.x_dns_create,
+	XPanel_core.x_faqs TO gkpanel_core.x_faqs,
+	XPanel_core.x_forwarders TO gkpanel_core.x_forwarders,
+	XPanel_core.x_ftpaccounts TO gkpanel_core.x_ftpaccounts,
+	XPanel_core.x_groups TO gkpanel_core.x_groups,
+	XPanel_core.x_htaccess TO gkpanel_core.x_htaccess,
+	XPanel_core.x_htpasswd_file TO gkpanel_core.x_htpasswd_file,
+	XPanel_core.x_htpasswd_mapper TO gkpanel_core.x_htpasswd_mapper,
+	XPanel_core.x_htpasswd_user TO gkpanel_core.x_htpasswd_user,
+	XPanel_core.x_logs TO gkpanel_core.x_logs,
+	XPanel_core.x_mailboxes TO gkpanel_core.x_mailboxes,
+	XPanel_core.x_modcats TO gkpanel_core.x_modcats,
+	XPanel_core.x_modules TO gkpanel_core.x_modules,
+	XPanel_core.x_mysql_databases TO gkpanel_core.x_mysql_databases,
+	XPanel_core.x_mysql_dbmap TO gkpanel_core.x_mysql_dbmap,
+	XPanel_core.x_mysql_users TO gkpanel_core.x_mysql_users,
+	XPanel_core.x_packages TO gkpanel_core.x_packages,
+	XPanel_core.x_permissions TO gkpanel_core.x_permissions,
+	XPanel_core.x_profiles TO gkpanel_core.x_profiles,
+	XPanel_core.x_quotas TO gkpanel_core.x_quotas,
+	XPanel_core.x_settings TO gkpanel_core.x_settings,
+	XPanel_core.x_translations TO gkpanel_core.x_translations,
+	XPanel_core.x_vhosts TO gkpanel_core.x_vhosts;
+
+4) OPEN: c:/XPanel/panel/cnf/db.php and REPLACE XPanel_core with gkpanel_core and SAVE. (GKPanel Config)
+
+5) OPEN: c:/XPanel/panel/etc/apps/phpmyadmin/??? and REPLACE XPanel_core with gkpanel_core and SAVE. (phpMyAdmin Config)
+
+???6) OPEN: c:/XPanel/panel/etc/apps/webmail/config/db.inc.php and REPLACE XPanel_roundcube with gkpanel_roundcube and SAVE. (RoundCube Config)
+
+7) Also need to do the same conversion for hMailServer
+
+8) Remove the old XPanel_core database: SQL Query: DROP DATABASE XPanel_core;

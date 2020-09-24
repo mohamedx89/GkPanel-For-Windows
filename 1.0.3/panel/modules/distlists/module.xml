@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Distribution Lists</name>
+    <version>100</version>
+    <defaultcat>Mail</defaultcat>
+    <desc>This module enables you to create and manage email distribution groups.</desc>
+    <authorname>GKPanel Project</authorname>
+    <authoremail>developers@cybercore.tv</authoremail>
+    <authorurl>http://www.cybercore.tv/</authorurl>
+</module>

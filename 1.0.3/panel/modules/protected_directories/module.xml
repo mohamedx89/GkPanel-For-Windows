@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<name>Protected Directories</name>
+	<version>300</version>
+	<defaultcat>Advanced</defaultcat>
+	<desc>Password protect your web applications and directories.</desc>
+    <authorname>GKPanel Project</authorname>
+    <authoremail>info@cybercore.tv</authoremail>
+    <authorurl>http://cybercore.tv/</authorurl>
+</module>

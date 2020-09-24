@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<name>Gate Keeper</name>
+<version>101</version>
+<type>user</type>
+<defaultcat>Server Admin</defaultcat>
+<desc>Gatekeeper is a module that enables you (the server administrator) to easily view and change your GKPanel server's web service (XMWS) API key..</desc>
+<authorname>HuyGK</authorname>
+<authoremail>bobbyallen.uk@gmail.com</authoremail>
+<authorurl>http://www.codejunkie87.com/</authorurl>
+<updateurl>http://modules.cybercore.tv/gatekeeper.xml</updateurl>
+</module>

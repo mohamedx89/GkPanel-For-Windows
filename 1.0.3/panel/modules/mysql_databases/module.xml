@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>MySQL Databases</name>
+    <version>100</version>
+    <defaultcat>Databases</defaultcat>
+    <desc>MySQL databases are used by many PHP applications such as forums and ecommerce systems, below you can manage and create MySQL databases.</desc>
+    <authorname>GKPanel Project</authorname>
+    <authoremail>developers@cybercore.tv</authoremail>
+    <authorurl>http://www.cybercore.tv/</authorurl>
+</module>

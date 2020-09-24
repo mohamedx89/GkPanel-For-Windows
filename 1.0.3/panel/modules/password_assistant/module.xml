@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Change Password</name>
+    <version>100</version>
+    <defaultcat>Account Information</defaultcat>
+    <desc>Change your current control panel password.</desc>
+    <authorname>GKPanel Project</authorname>
+    <authoremail>developers@cybercore.tv</authoremail>
+    <authorurl>http://www.cybercore.tv/</authorurl>
+</module>

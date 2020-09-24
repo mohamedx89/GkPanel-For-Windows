@@ -1,0 +1,146 @@
+<@ Result @>
+<link rel="stylesheet" type="text/css" href="/modules/system_files/assets/style.css">
+<table class="zcat"><tbody>
+   <tr>
+     <th align="left" height="0" width="1016" border="0" cellspacing="1" cellpadding="1">
+      <div class="title-div"><span class="link-title">Info</span>
+     <div id="updn"><img src="<@ ArrowDn @>" width="17" height="14" id="info-show" /><img src="<@ ArrowUp @>" width="17" height="13" id="info-hide" /></div></th>
+   </tr>
+</tbody></table>
+
+<info style="display: block">
+<div class="forms"><table><tbody>
+<table width="850" border="0" cellspacing="1" cellpadding="1"><tbody>
+<tr>
+  
+   
+This module enables you to edit system files that are not accessable form within GKPanel.<br><br>
+The most comonly used files have been added below, simply editd and save.<br><br>
+Click the blue arrows to the right to display the file you wish to change.<br><br>
+
+  </td>
+</tr>
+</tbody></table>
+</div>
+</info>
+
+<script>
+	$("#info-show").click(function () {    $("info").show("slow");    });   
+	$("#info-hide").click(function () {  $("info").hide(1000);         });
+</script>
+
+
+
+
+
+<table class="zcat"><tbody>
+   <tr>
+     <th align="left" height="0" width="1016" border="0" cellspacing="1" cellpadding="1">
+      <div class="title-div"><span class="link-title">php.ini</span>
+     <div id="updn"><img src="<@ ArrowDn @>" width="17" height="14" id="phpini-show" /><img src="<@ ArrowUp @>" width="17" height="13" id="phpini-hide" /></div></th>
+   </tr>
+</tbody></table>
+
+<phpini style="display: none">
+<div class="forms"><table><tbody><br>
+<table width="850" border="0" cellspacing="1" cellpadding="1"><tbody>
+<tr>
+   <td>
+    <form class="form" name="FORM" id="FORM" method="post" action="./?module=system_files&action=PhpiniPost">
+		 
+		 <span class="warning"><b>Dont forget to make a backup first!</b></span><br><br>
+		 
+         <textarea name="data" id="data" cols="103" rows="60"><@ Phpini @></textarea>
+	     <br><br>
+		 
+		 <button class="button-loader btn btn-primary" name="l1" id="l1" type="submit"><: Save :></button>
+		 </div>
+		 
+   </form>
+   </td>
+</tr>
+</tbody></table>
+</div>
+</phpini>
+
+<script>
+	$("#phpini-show").click(function () {    $("phpini").show("slow");    });   
+	$("#phpini-hide").click(function () {  $("phpini").hide(1000);         });
+</script>
+
+
+
+
+
+<table class="zcat"><tbody>
+   <tr>
+     <th align="left" height="0" width="1016" border="0" cellspacing="1" cellpadding="1">
+      <div class="title-div"><span class="link-title">httpd.conf</span>
+     <div id="updn"><img src="<@ ArrowDn @>" width="17" height="14" id="httpd-show" /><img src="<@ ArrowUp @>" width="17" height="13" id="httpd-hide" /></div></th>
+   </tr>
+</tbody></table>
+
+<httpd style="display: none">
+<div class="forms"><table><tbody><br>
+<table width="850" border="0" cellspacing="1" cellpadding="1"><tbody>
+<tr>
+   <td>
+    <form class="form" name="FORM" id="FORM" method="post" action="./?module=system_files&action=httpdPost">
+		 
+		 <span class="warning"><b>Dont forget to make a backup first!<b/></span><br><br>
+		 
+         <textarea name="data" id="data" cols="103" rows="50"><@ Httpd @></textarea>
+	     <br><br>
+		 
+		 <button class="button-loader btn btn-primary" name="l1" id="l1" type="submit"><: Save :></button>
+		 </div>
+		 
+   </form>
+   </td>
+</tr>
+</tbody></table>
+</div>
+</httpd>
+
+<script>
+	$("#httpd-show").click(function () {    $("httpd").show("slow");    });   
+	$("#httpd-hide").click(function () {  $("httpd").hide(1000);         });
+</script>
+
+
+
+
+<table class="zcat"><tbody>
+   <tr>
+     <th align="left" height="0" width="1016" border="0" cellspacing="1" cellpadding="1">
+      <div class="title-div"><span class="link-title">http-vhost.conf (Temporarily saves only)</span>
+     <div id="updn"><img src="<@ ArrowDn @>" width="17" height="14" id="vhost-show" /><img src="<@ ArrowUp @>" width="17" height="13" id="vhost-hide" /></div></th>
+   </tr>
+</tbody></table>
+
+<vhost style="display: none">
+<div class="forms"><table><tbody><br>
+<table width="850" border="0" cellspacing="1" cellpadding="1"><tbody>
+<tr>
+   <td>
+    <form class="form" name="FORM" id="FORM" method="post" action="./?module=system_files&action=vhostPost">
+		 
+		 <span class="warning"><b>This file will only save untill the next deamon run, use for testing only!</b><br>Permanent settings can be made in "Module Admin>>Apache Admin>>Global GKPanel Entry's"</span><br><br>
+		 
+         <textarea name="data" id="data" cols="103" rows="50"><@ Vhost @></textarea>
+	     <br><br>
+		 
+		 <button class="button-loader btn btn-primary" name="l1" id="l1" type="submit"><: Save :></button>
+		 </div>
+		 
+   </form>
+   </td>
+</tr>
+</tbody></table>
+</div>
+</vhost>
+
+<script>
+	$("#vhost-show").click(function () {    $("vhost").show("slow");    });   
+	$("#vhost-hide").click(function () {  $("vhost").hide(1000);         });
+</script>

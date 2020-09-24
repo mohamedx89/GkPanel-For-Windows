@@ -1,0 +1,23 @@
+This is a basic conversion script to convert XPanel 10.1.1 to GKPanel 1.0.3 on Windows platforms.
+
+***NOTICE***: Make sure you are using XPanel 10.1.1!
+
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Use at your OWN RISK!
+
+1) UnZip the package. (If you are reading this, then, well, you already did! LOL)
+
+2) Back up your entire c:/XPanel/ folder.
+
+3) Using phpMyAdmin or your favorite database tool, login as ROOT user and make a backup of the XPanel_core database.
+
+4) Upload all files and folders in the /panel/ folder to your server's /panel/ folder overwriting existing files.
+
+5) Navigate to your panel login and run the upgrade script. Ex: http://XPanel.domain.com/upgrade/index.php
+
+6) Enjoy your upgraded GKPanel Panel!
+
+Any questions, comments or support, please post in our forums here: http://forums.cybercore.tv/forumdisplay.php?fid=61

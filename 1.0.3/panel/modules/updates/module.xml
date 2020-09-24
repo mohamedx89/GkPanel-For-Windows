@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <name>Updates</name>
+    <version>100</version>
+    <defaultcat>Server Admin</defaultcat>
+    <desc>Check to see if there are any available updates to your version of the GKPanel software.</desc>
+    <authorname>GKPanel Project</authorname>
+    <authoremail>info@cybercore.tv</authoremail>
+    <authorurl>http://cybercore.tv/</authorurl>
+</module>
